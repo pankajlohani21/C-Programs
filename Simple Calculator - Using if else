@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+	float a,b,res;
+	int choice;
+	printf ( "Enter the First Number :- \n");
+	scanf ( "%f",&a);
+	printf ( "Enter the Second Number :- \n");
+	scanf ( "%f",&b);
+	
+	printf ( "Choice for The Following :- \n");
+	printf ( " 1)- Addition \n 2)- Subtraction \n 3)- Division \n 4)- Multiplication \n");
+	printf ( " \nEnter the Choice :- \n");
+	scanf ("%d", &choice);
+	
+	if (choice == 1)
+	{
+		res = a+b;
+	}
+	else if (choice ==2)
+	{
+		res = a-b;
+	}
+	else if (choice == 3)
+	{
+		res = a/b;
+	}
+	else if (choice == 4)
+	{
+		res = a*b;
+	}
+	else
+	{
+		printf ( " Invalid Input");
+	}
+	
+	printf ("The Required answer is :- %f",res);
+	return 0;
+}
